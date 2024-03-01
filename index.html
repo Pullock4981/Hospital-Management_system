@@ -31,13 +31,125 @@
 
     <!--header section  -->
 
-    <header>
+    <header class="lg:ml-32 lg:mr-32 mt-10">
+
+        <!-- nav section -->
+
+        <section class="ml-8 mr-8 lg:ml-0 lg:mr-0">
+
+            <div class="navbar bg-base-100 static">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-4">
+                            <li><a
+                                    class="text-lg font-semibold hover:text-white hover:bg-red-500 flex justify-center items-center">Home</a>
+                            </li>
+                            <li><a
+                                    class="text-lg font-semibold hover:text-white hover:bg-red-500 flex justify-center items-center">About</a>
+                            </li>
+                            <li><a
+                                    class="text-lg font-semibold hover:text-white hover:bg-red-500 flex justify-center items-center">Blog</a>
+                            </li>
+                            <li><a
+                                    class="text-lg font-semibold hover:text-white hover:bg-red-500 flex justify-center items-center">Services</a>
+                            </li>
+                            <li><a
+                                    class="text-lg font-semibold hover:text-white hover:bg-red-500 flex justify-center items-center">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl font-bold lg:font-extrabold lg:text-3xl"><img
+                            src="assats/icon-1.png" class="h-6 w-6 lg:h-10 lg:w-10" alt=""> Madi<span
+                            class="text-red-500">Aid</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-lg font-semibold hover:text-white hover:bg-red-500">Home</a></li>
+                        <li><a class="text-lg font-semibold hover:text-white hover:bg-red-500">About</a></li>
+                        <li><a class="text-lg font-semibold hover:text-white hover:bg-red-500">Blog</a></li>
+                        <li><a class="text-lg font-semibold hover:text-white hover:bg-red-500">Services</a></li>
+                        <li><a class="text-lg font-semibold hover:text-white hover:bg-red-500">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-lg font-semibold hover:text-white hover:bg-red-500">Log in</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- hero section -->
+
+        <section>
+
+            <div class="mt-6 relative ml-8 mr-8 lg:mr-0 lg:ml-0">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full h-[45vh] lg:h-[80vh]">
+                        <img src="assats/cover-4.jpg" alt="" class="w-full">
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full h-[45vh] lg:h-[80vh]">
+                        <img src="assats/cover-3.jpg" class="w-full rounded-2xl" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full h-[45vh] lg:h-[80vh]">
+                        <img src="assats/cover-1.jpg" class="w-full rounded-2xl" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full h-[45vh] lg:h-[80vh]">
+                        <img src="assats/cover-2.jpg" class="w-full rounded-2xl" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div
+                    class="bg-[#131318] pr-5 pl-5 pt-4 pb-4 rounded-2xl w-[50vw] absolute bottom-0 right-0 hidden md:block lg:block">
+                    <h3 class="font-extrabold text-[#FFF] text-2xl">
+                        Meet all the heroes from the field
+                    </h3>
+                    <p class="font-medium text-base text-[#ffffff99]">
+                        Welcome to our journey. You can check all professional player in our side. Be a hero with a hero.
+                    </p>
+                </div> -->
+                <!-- <div class="bg-[#131318] pr-5 pl-5 pt-4 pb-4 rounded-2xl w-full relative top-2 md:hidden lg:hidden">
+                    <h3 class="font-extrabold text-[#FFF] text-2xl">
+                        Meet all the heroes from the field
+                    </h3>
+                    <p class="font-medium text-base text-[#ffffff99]">
+                        Welcome to our journey. You can check all professional player in our side. Be a hero with a hero.
+                    </p>
+                </div> -->
+            </div>
+
+        </section>
+
 
     </header>
 
     <!-- main section -->
 
     <main>
+
+
 
     </main>
 
