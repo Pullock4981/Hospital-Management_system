@@ -23,9 +23,11 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
-</head>
+    <!-- icon -->
 
-<!-- body -->
+    <script src="https://kit.fontawesome.com/7ff9b0e562.js" crossorigin="anonymous"></script>
+
+</head>
 
 <body>
 
@@ -49,7 +51,7 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-4">
-                            <li><a
+                            <li><a href="index.html"
                                     class="text-lg font-semibold hover:text-white hover:bg-red-500 flex justify-center items-center">Home</a>
                             </li>
                             <li><a
@@ -72,7 +74,8 @@
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a class="text-lg font-semibold hover:text-white hover:bg-red-500">Home</a></li>
+                        <li><a href="index.html"
+                                class="text-lg font-semibold hover:text-white hover:bg-red-500">Home</a></li>
                         <li><a class="text-lg font-semibold hover:text-white hover:bg-red-500">About</a></li>
                         <li><a class="text-lg font-semibold hover:text-white hover:bg-red-500">Blog</a></li>
                         <li><a class="text-lg font-semibold hover:text-white hover:bg-red-500">Services</a></li>
@@ -80,64 +83,8 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a href="login.html" class="btn text-lg font-semibold hover:text-white hover:bg-red-500">Log in</a>
+                    <a class="btn text-lg font-semibold hover:text-white hover:bg-red-500">Log in</a>
                 </div>
-            </div>
-
-        </section>
-
-        <!-- hero section -->
-
-        <section>
-
-            <div class="mt-6 relative ml-8 mr-8 lg:mr-0 lg:ml-0">
-                <div class="carousel w-full">
-                    <div id="slide1" class="carousel-item relative w-full h-[40vh] lg:h-[80vh]">
-                        <img src="assats/cover-4.jpg" alt="" class="w-full">
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide4" class="btn btn-circle">❮</a>
-                            <a href="#slide2" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                    <div id="slide2" class="carousel-item relative w-full h-[40vh] lg:h-[80vh]">
-                        <img src="assats/cover-3.jpg" class="w-full rounded-2xl" />
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide1" class="btn btn-circle">❮</a>
-                            <a href="#slide3" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                    <div id="slide3" class="carousel-item relative w-full h-[40vh] lg:h-[80vh]">
-                        <img src="assats/cover-1.jpg" class="w-full rounded-2xl" />
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide2" class="btn btn-circle">❮</a>
-                            <a href="#slide4" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                    <div id="slide4" class="carousel-item relative w-full h-[40vh] lg:h-[80vh]">
-                        <img src="assats/cover-2.jpg" class="w-full rounded-2xl" />
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide3" class="btn btn-circle">❮</a>
-                            <a href="#slide1" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div
-                    class="bg-[#131318] pr-5 pl-5 pt-4 pb-4 rounded-2xl w-[50vw] absolute bottom-0 right-0 hidden md:block lg:block">
-                    <h3 class="font-extrabold text-[#FFF] text-2xl">
-                        Meet all the heroes from the field
-                    </h3>
-                    <p class="font-medium text-base text-[#ffffff99]">
-                        Welcome to our journey. You can check all professional player in our side. Be a hero with a hero.
-                    </p>
-                </div> -->
-                <!-- <div class="bg-[#131318] pr-5 pl-5 pt-4 pb-4 rounded-2xl w-full relative top-2 md:hidden lg:hidden">
-                    <h3 class="font-extrabold text-[#FFF] text-2xl">
-                        Meet all the heroes from the field
-                    </h3>
-                    <p class="font-medium text-base text-[#ffffff99]">
-                        Welcome to our journey. You can check all professional player in our side. Be a hero with a hero.
-                    </p>
-                </div> -->
             </div>
 
         </section>
@@ -149,7 +96,62 @@
 
     <main>
 
+        <section class="log-in lg:ml-32 lg:mr-32 mr-4 ml-4 mt-10 bg-base-200 pb-10 rounded-2xl">
 
+            <div class="hero min-h-screen ">
+                <div class="hero-content flex-col flex lg:justify-center items-center lg:flex-row-reverse lg:gap-40">
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-3xl lg:text-4xl font-bold">Login now!</h1>
+                        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                            exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <img src="assats/login-img.jpg" alt="" class="h-80">
+                    </div>
+                    <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 lg:ml-10">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Email</span>
+                                </label>
+                                <input type="email" placeholder="email" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Password</span>
+                                </label>
+                                <input type="password" placeholder="password" class="input input-bordered" required />
+                                <label class="label">
+                                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                                </label>
+                            </div>
+                            <div class="form-control mt-6">
+                                <button class="btn btn-primary">Login</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+                <hr class="h-1 min-w-full border-dotted mb-6">
+            </div>
+
+            <div class="flex justify-center items-center">
+                <p class=" font-medium mb-4">OR</p>
+            </div>
+
+            <div class="flex justify-center items-center">
+                <a class="btn btn-ghost text-lg bg-white"><img src="assats/google_icon.png" alt=""> Continue with
+                    Google</span></a>
+            </div>
+
+            <div class="flex justify-center items-center mt-6 gap-1">
+                <p>Are you new Customer?</p>
+                <a href="" class="text-cyan-500">Register Now</a>
+            </div>
+
+        </section>
 
     </main>
 
