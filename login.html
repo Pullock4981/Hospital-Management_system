@@ -96,63 +96,97 @@
 
     <main>
 
-        <section class="log-in lg:ml-32 lg:mr-32 mr-4 ml-4 mt-10 bg-green-100 pb-10 rounded-2xl">
 
-            <div class="hero min-h-screen ">
-                <div class="hero-content flex-col flex lg:justify-center items-center lg:flex-row-reverse lg:gap-40">
-                    <div class="text-center lg:text-left">
-                        <h1 class="text-3xl lg:text-4xl font-bold">Login now!</h1>
-                        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-                            exercitationem quasi. In deleniti eaque aut repudiandae.</p>
-                        <img src="assats/login-img.jpg" alt="" class="h-80">
-                    </div>
-                    <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 lg:ml-10">
-                        <form class="card-body">
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Email</span>
-                                </label>
-                                <input type="email" placeholder="email" class="input input-bordered" required />
-                            </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Password</span>
-                                </label>
-                                <input type="password" placeholder="password" class="input input-bordered" required />
-                                <label class="label">
-                                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
-                            </div>
-                            <div class="form-control mt-6">
-                                <a href="index.html"
-                                    class="btn text-lg font-semibold bg-red-500 text-white hover:bg-green-500">Login</a>
-                            </div>
-                        </form>
-                    </div>
 
+        <div class="flex flex-col lg:flex-row justify-between gap-5 lg:gap-10 lg:ml-32 lg:mr-32 mr-4 ml-4 mt-10">
+
+            <div class="flex flex-col justify-center items-center text-2xl font-bold border-2 h-40 p-10 lg:w-1/4 rounded-2xl">
+                <ul>
+                    <li> <a href="">Patient</a> </li>
+                    <li> <a href="">Doctor</a></li>
+                    <li> <a href="">Admin</a></li>
+                </ul>
+            </div>
+
+            <div class="lg:w-2/4">
+                <section class="log-in  bg-green-100 pb-10 rounded-2xl">
+
+                    <div class="hero min-h-60 ">
+                        <div
+                            class="hero-content lg:gap-40">
+
+                            
+                            <!-- <div class="text-center lg:text-left">
+                                <h1 class="text-3xl lg:text-4xl font-bold">Login now!</h1>
+                                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                    exercitationem quasi. In deleniti eaque aut repudiandae.</p>
+                                <img src="assats/login-img.jpg" alt="" class="h-80">
+                            </div> -->
+                            <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 lg:ml-10">
+                                <h1 class="text-3xl lg:text-4xl font-bold text-center my-8">Login now!</h1>
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Email</span>
+                                        </label>
+                                        <input type="email" placeholder="email" class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Password</span>
+                                        </label>
+                                        <input type="password" placeholder="password" class="input input-bordered"
+                                            required />
+                                        <label class="label">
+                                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                                        </label>
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <a href="index.html"
+                                            class="btn text-lg font-semibold bg-red-500 text-white hover:bg-green-500">Login</a>
+                                    </div>
+                                </form>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div>
+                        <hr class="h-1 min-w-full border-dotted mb-6 mt-8">
+                    </div>
+    
+                    <div class="flex justify-center items-center">
+                        <p class=" font-medium mb-4">OR</p>
+                    </div>
+    
+                    <div class="flex justify-center items-center">
+                        <a class="btn btn-ghost text-lg bg-white"><img src="assats/google_icon.png" alt=""> Continue with
+                            Google</span></a>
+                    </div>
+    
+                    <div class="flex justify-center items-center mt-6 gap-1">
+                        <p>Are you new Customer?</p>
+                        <a href="register.html" class="text-[#4A00FF]">Register Now</a>
+                    </div>
+    
+                </section>
+            </div>
+
+            <div class="text-center text-2xl font-bold lg:w-1/4">
+                <h3>
+                    Enter your photo
+                </h3>
+                <div class="border-2 p-5 rounded-xl mt-5">
+                    submit here
                 </div>
-
+                <button class="btn px-2 mt-5">
+                    Submit
+                </button>
             </div>
+        </div>
 
-            <div>
-                <hr class="h-1 min-w-full border-dotted mb-6 mt-8">
-            </div>
 
-            <div class="flex justify-center items-center">
-                <p class=" font-medium mb-4">OR</p>
-            </div>
-
-            <div class="flex justify-center items-center">
-                <a class="btn btn-ghost text-lg bg-white"><img src="assats/google_icon.png" alt=""> Continue with
-                    Google</span></a>
-            </div>
-
-            <div class="flex justify-center items-center mt-6 gap-1">
-                <p>Are you new Customer?</p>
-                <a href="register.html" class="text-[#4A00FF]">Register Now</a>
-            </div>
-
-        </section>
 
     </main>
 
