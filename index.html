@@ -61,6 +61,9 @@
                             <li><a
                                     class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">Contact</a>
                             </li>
+                            <li><a href="appointment.html"
+                                class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">Appointment</a>
+                        </li>
                         </ul>
                     </div>
                     <a class="btn bg-white border-0 hover:bg-white text-xl font-bold lg:font-extrabold lg:text-3xl"><img
@@ -76,6 +79,8 @@
                         <li><a href="service.html"
                                 class="text-lg font-semibold hover:text-white hover:bg-green-500">Services</a></li>
                         <li><a class="text-lg font-semibold hover:text-white hover:bg-green-500">Contact</a></li>
+                        <li><a href="appointment.html"
+                            class="text-lg font-semibold hover:text-white hover:bg-green-500">Appointment</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
@@ -138,6 +143,65 @@
     <main class="lg:ml-20 ml-4 lg:mr-20 mr-4 mt-2 mb-10">
 
 
+        <!-- service section -->
+
+        <section class="about mt-20">
+
+            <div>
+                <h2 class="text-center lg:text-5xl text-3xl font-extrabold">
+                    Our Services
+                </h2>
+                <p class="mt-5 text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, expedita? Lorem ipsum dolor sit
+                    amet
+                    consectetur <br> adipisicing elit. Provident, in!
+                </p>
+            </div>
+
+            <div class="mt-20 lg:ml-20 ml-4 lg:mr-20  mr-4">
+
+                <div class="flex lg:flex-row flex-col justify-center items-center lg:gap-8 gap-4">
+                    <!-- card-1 -->
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="assats/5739306.jpg" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Ambulance Service</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions">
+                                <button class="btn btn-primary">See more...</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <!-- card-2 -->
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="assats/5183184.jpg" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Online Doctor</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions">
+                                <button id="bookAppointmentBtn" class="btn btn-primary">Book Appointment</button>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            var bookAppointmentButton = document.getElementById('bookAppointmentBtn');
+                            bookAppointmentButton.addEventListener('click', function () {
+                                window.location.href = 'appointment.html'; 
+                            });
+                        });
+                    </script>
+                </div>
+
+            </div>
+
+        </section>
+
         <!-- about section -->
 
         <section class="about mt-20">
@@ -193,57 +257,7 @@
                             <h2 class="card-title">Doctors</h2>
                             <p>If a dog chews shoes whose shoes does he choose?</p>
                             <div class="card-actions">
-                                <button class="btn btn-primary">See more...</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- service section -->
-
-        <section class="about mt-20">
-
-            <div>
-                <h2 class="text-center lg:text-5xl text-3xl font-extrabold">
-                    Our Services
-                </h2>
-                <p class="mt-5 text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, expedita? Lorem ipsum dolor sit
-                    amet
-                    consectetur <br> adipisicing elit. Provident, in!
-                </p>
-            </div>
-
-            <div class="mt-20 lg:ml-20 ml-4 lg:mr-20  mr-4">
-
-                <div class="flex lg:flex-row flex-col justify-center items-center lg:gap-8 gap-4">
-                    <!-- card-1 -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
-                        <figure class="px-10 pt-10">
-                            <img src="assats/5739306.jpg" alt="Shoes" class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">Ambulance Service</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions">
-                                <button class="btn btn-primary">See more...</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- card-2 -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
-                        <figure class="px-10 pt-10">
-                            <img src="assats/5183184.jpg" alt="Shoes" class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">Online Doctor</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions">
-                                <button class="btn btn-primary">See more...</button>
+                                <button class=" btn btn-primary">See more...</button>
                             </div>
                         </div>
                     </div>
