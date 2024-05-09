@@ -147,10 +147,20 @@
                             <h2 class="card-title">Online Doctor</h2>
                             <p>If a dog chews shoes whose shoes does he choose?</p>
                             <div class="card-actions">
-                                <button class="btn btn-primary">See more...</button>
+                                <button id="bookAppointmentBtn" class="btn btn-primary">Book Appointment</button>
                             </div>
                         </div>
                     </div>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            var bookAppointmentButton = document.getElementById('bookAppointmentBtn');
+                    
+                            bookAppointmentButton.addEventListener('click', function () {
+                                // Redirect to the desired page when the button is clicked
+                                window.location.href = 'appointment.html'; // Replace 'new_page.html' with the actual URL of the new HTML page
+                            });
+                        });
+                    </script>
                 </div>
 
             </div>
