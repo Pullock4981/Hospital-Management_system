@@ -23,11 +23,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
-    <!-- icon -->
-
-    <script src="https://kit.fontawesome.com/7ff9b0e562.js" crossorigin="anonymous"></script>
-
 </head>
+
+<!-- body -->
 
 <body>
 
@@ -39,7 +37,7 @@
 
         <section class="ml-8 mr-8 lg:ml-0 lg:mr-0 ">
 
-            <div class="navbar">
+            <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -54,16 +52,18 @@
                             <li><a href="index.html"
                                     class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">Home</a>
                             </li>
-                            <li><a
+                            <li><a href="about.html"
                                     class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">About</a>
                             </li>
-                        
-                            <li><a
+                            <li><a href="service.html"
                                     class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">Services</a>
                             </li>
-                            <li><a
+                            <li><a href="contact.html"
                                     class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">Contact</a>
                             </li>
+                            <li><a href="appointment.html"
+                                class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">Appointment</a>
+                        </li>
                         </ul>
                     </div>
                     <a class="btn bg-white border-0 hover:bg-white text-xl font-bold lg:font-extrabold lg:text-3xl"><img
@@ -73,120 +73,110 @@
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a href="index.html"
-                             class="text-lg font-semibold hover:text-white hover:bg-green-500">Home</a></li>
-                        <li><a class="text-lg font-semibold hover:text-white hover:bg-green-500">About</a></li>
-                        <li><a class="text-lg font-semibold hover:text-white hover:bg-green-500">Services</a></li>
-                        <li><a class="text-lg font-semibold hover:text-white hover:bg-green-500">Contact</a></li>
+                                class="text-lg font-semibold hover:text-white hover:bg-green-500">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-lg font-semibold hover:text-white hover:bg-green-500">About</a></li>
+                        <li><a href="service.html"
+                                class="text-lg font-semibold hover:text-white hover:bg-green-500">Services</a></li>
+                        <li><a href="contact.html"
+                            class="text-lg font-semibold hover:text-white hover:bg-green-500">Contact</a></li>
+                        <li><a href="appointment.html"
+                            class="text-lg font-semibold hover:text-white hover:bg-green-500">Appointment</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a href="" class="btn text-lg font-semibold bg-red-500 text-white hover:bg-green-500">Log in</a>
+                    <a href="login.html" class="btn text-lg font-semibold bg-red-500 text-white hover:bg-green-500">Log
+                        in</a>
                 </div>
             </div>
 
         </section>
-
-
     </header>
-
-    <!-- main section -->
-
-    <main>
-
-
-
-        <div class="flex flex-col lg:flex-row justify-between gap-5 lg:gap-10 lg:ml-32 lg:mr-32 mr-4 ml-4 mt-10">
-
-            <div class="flex flex-col justify-center items-center text-2xl font-bold border-2 h-40 p-10 lg:w-1/4 rounded-2xl">
-                <ul>
-                    <li> <a href="">Patient</a> </li>
-                    <li> <a href="">Doctor</a></li>
-                    <li> <a href="">Admin</a></li>
-                </ul>
+<!-- Register Form -->
+<main>
+    <div class="min-h-screen flex items-center justify-center bg-gray-100">
+        <form action="#non" method="post" class="w-full max-w-md bg-white rounded-lg shadow-md p-8">
+            <p class="text-gray-700 mb-4">Note: All fields are required.</p>
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <input type="text" placeholder="First Name" required
+                    class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
+                <input type="text" placeholder="Last Name" required
+                    class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
             </div>
-
-            <div class="lg:w-2/4">
-                <section class="log-in  bg-green-100 pb-10 rounded-2xl">
-
-                    <div class="hero min-h-60 ">
-                        <div
-                            class="hero-content lg:gap-40">
-
-                            
-                            <!-- <div class="text-center lg:text-left">
-                                <h1 class="text-3xl lg:text-4xl font-bold">Login now!</h1>
-                                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-                                    exercitationem quasi. In deleniti eaque aut repudiandae.</p>
-                                <img src="assats/login-img.jpg" alt="" class="h-80">
-                            </div> -->
-                            <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 lg:ml-10">
-                                <h1 class="text-3xl lg:text-4xl font-bold text-center my-8">Login now!</h1>
-                                <form class="card-body">
-                                    <div class="form-control">
-                                        <label class="label">
-                                            <span class="label-text">Email</span>
-                                        </label>
-                                        <input type="email" placeholder="email" class="input input-bordered" required />
-                                    </div>
-                                    <div class="form-control">
-                                        <label class="label">
-                                            <span class="label-text">Password</span>
-                                        </label>
-                                        <input type="password" placeholder="password" class="input input-bordered"
-                                            required />
-                                        <label class="label">
-                                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-                                        </label>
-                                    </div>
-                                    <div class="form-control mt-6">
-                                        <a href="index.html"
-                                            class="btn text-lg font-semibold bg-red-500 text-white hover:bg-green-500">Login</a>
-                                    </div>
-                                </form>
-                            </div>
-    
-                        </div>
-    
-                    </div>
-    
-                    <div>
-                        <hr class="h-1 min-w-full border-dotted mb-6 mt-8">
-                    </div>
-    
-                    <div class="flex justify-center items-center">
-                        <p class=" font-medium mb-4">OR</p>
-                    </div>
-    
-                    <div class="flex justify-center items-center">
-                        <a class="btn btn-ghost text-lg bg-white"><img src="assats/google_icon.png" alt=""> Continue with
-                            Google</span></a>
-                    </div>
-    
-                    <div class="flex justify-center items-center mt-6 gap-1">
-                        <p>Are you new Customer?</p>
-                        <a href="register.html" class="text-[#4A00FF]">Register Now</a>
-                    </div>
-    
-                </section>
+            <input type="email" placeholder="Email Address" required
+                class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+            <input type="password" placeholder="Password" required
+                class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+            <input type="password" placeholder="Verify Password" required
+                class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+            <div class="grid grid-cols-3 gap-4 mb-4">
+                <input type="text" placeholder="Date (dd)" required
+                    class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
+                <input type="text" placeholder="Month (mm)" required
+                    class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
+                <input type="text" placeholder="Year (yyyy)" required
+                    class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
             </div>
-
-            <div class="text-center text-2xl font-bold lg:w-1/4">
-                <h3>
-                    Enter your photo
-                </h3>
-                <div class="border-2 p-5 rounded-xl mt-5">
-                    submit here
-                </div>
-                <button class="btn px-2 mt-5">
-                    Submit
-                </button>
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <select
+                    class="border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+                    <option value="0" selected disabled>City</option>
+                    <option value="1">Dhaka</option>
+                </select>
+                <select
+                    class="border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+                    <option value="0" selected disabled>Country</option>
+                    <option value="1">Bangladesh</option>
+                    <option value="2">Outside Bangladesh</option>
+                </select>
             </div>
-        </div>
-
-
-
-    </main>
-
+            <select
+            class="border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+            <option value="0" selected disabled>Specialty</option>
+            <option value="1">Family Medicine</option>
+            </select>
+            <select
+            class="border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+            <option value="0" selected disabled>Language</option>
+            <option value="1">English</option>
+            </select>
+            <p class="text-gray-500 mb-4">Proficient languages.</p>
+            <input type="text" placeholder="Medical school" required
+               class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+            <input type="text" placeholder="Medical ID" required
+               class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+            <input type="text" placeholder="PayPal username" required
+               class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+            <div class="mb-4">
+            <label for="fileToUpload" class="block text-sm font-medium text-gray-700">Upload your medical ID:</label>
+            <input type="file" name="fileToUpload" id="fileToUpload" required
+                   class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
+            </div>
+            <div class="mb-4">
+            <label for="fileToUpload2" class="block text-sm font-medium text-gray-700">Upload your personal photo:</label>
+            <input type="file" name="fileToUpload2" id="fileToUpload2" required
+                   class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
+            <p class="text-gray-500">Professional clothing required.</p>
+            </div>
+            <input type="text" placeholder="Enter your Facebook profile link" required
+               class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+            <input type="text" placeholder="Enter your Linkedin profile link" required
+               class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+            <input type="text" placeholder="Enter your Twitter username" required
+               class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+            <input type="text" placeholder="Enter your Instagram username" required
+               class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+            <div class="flex items-center mb-4">
+            <input type="checkbox" id="register-agree" class="rounded border-gray-300 focus:ring focus:border-blue-300">
+            <label for="register-agree" class="ml-2 block text-sm text-gray-900">
+                Do you agree to the <a href="#" class="text-blue-600">terms and conditions?</a>
+            </label>
+            </div>
+            <input type="submit" value="Register Now"
+               class="w-full bg-blue-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">
+        </form>
+    </div>
+</main>
     <!-- footer section -->
 
     <footer
@@ -243,5 +233,4 @@
 
     <script src="tailwind.config.js"></script>
 </body>
-
 </html>
