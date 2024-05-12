@@ -1,18 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Appointment Form</title>
-  <!-- Link to your CSS file -->
-  <link rel="stylesheet" href="appointment.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital-Management-System</title>
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind & DaisyUI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
+
+<!-- body -->
+
 <body>
-  <div class="formbold-main-wrapper">
-    <div class="formbold-form-wrapper">
+
+    <!--header section  -->
+
+    <header class="lg:ml-32 lg:mr-32 mt-10">
+
+        <!-- nav section -->
+
+        <section class="ml-8 mr-8 lg:ml-0 lg:mr-0 ">
+
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-4">
+                            <li><a href="index.html"
+                                    class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">Home</a>
+                            </li>
+                            <li><a href="about.html"
+                                    class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">About</a>
+                            </li>
+                            <li><a href="service.html"
+                                    class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">Services</a>
+                            </li>
+                            <li><a href="contact.html"
+                                    class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">Contact</a>
+                            </li>
+                            <li><a href="appointment.html"
+                                class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">Appointment</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <a class="btn bg-white border-0 hover:bg-white text-xl font-bold lg:font-extrabold lg:text-3xl"><img
+                            src="assats/icon-1.png" class="h-6 w-6 lg:h-10 lg:w-10 " alt=""><span
+                            class="text-green-500"> Medi</span><span class="text-red-500">Aid</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="index.html"
+                                class="text-lg font-semibold hover:text-white hover:bg-green-500">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-lg font-semibold hover:text-white hover:bg-green-500">About</a></li>
+                        <li><a href="service.html"
+                                class="text-lg font-semibold hover:text-white hover:bg-green-500">Services</a></li>
+                        <li><a href="contact.html"
+                            class="text-lg font-semibold hover:text-white hover:bg-green-500">Contact</a></li>
+                        <li><a href="appointment.html"
+                            class="text-lg font-semibold hover:text-white hover:bg-green-500">Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a href="login.html" class="btn text-lg font-semibold bg-red-500 text-white hover:bg-green-500">Log
+                        in</a>
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+  <div class="flex justify-center items-center p-12">
+    <div class="w-full max-w-lg bg-white p-8 rounded-lg">
       <form action="https://formbold.com/s/FORM_ID" method="POST" id="appointmentForm">
-        <div class="formbold-mb-5">
-          <label for="name" class="formbold-form-label"> Full Name </label>
+        <div class="mb-5">
+          <label for="name" class="block font-medium text-gray-700">Full Name</label>
           <input
             type="text"
             name="name"
@@ -21,8 +106,8 @@
             class="formbold-form-input"
           />
         </div>
-        <div class="formbold-mb-5">
-          <label for="phone" class="formbold-form-label"> Phone Number </label>
+        <div class="mb-5">
+          <label for="phone" class="block font-medium text-gray-700">Phone Number</label>
           <input
             type="text"
             name="phone"
@@ -31,8 +116,8 @@
             class="formbold-form-input"
           />
         </div>
-        <div class="formbold-mb-5">
-          <label for="age" class="formbold-form-label"> Age </label>
+        <div class="mb-5">
+          <label for="age" class="block font-medium text-gray-700">Age</label>
           <input
             type="text"
             name="age"
@@ -41,8 +126,8 @@
             class="formbold-form-input"
           />
         </div>
-        <div class="formbold-mb-5">
-          <label for="email" class="formbold-form-label"> Email Address </label>
+        <div class="mb-5">
+          <label for="email" class="block font-medium text-gray-700">Email Address</label>
           <input
             type="email"
             name="email"
@@ -51,10 +136,10 @@
             class="formbold-form-input"
           />
         </div>
-        <div class="flex flex-wrap formbold--mx-3">
-          <div class="w-full sm:w-half formbold-px-3">
-            <div class="formbold-mb-5 w-full">
-              <label for="date" class="formbold-form-label"> Date </label>
+        <div class="flex flex-wrap mb-5">
+          <div class="w-full sm:w-1/2 px-3">
+            <div class="mb-5">
+              <label for="date" class="block font-medium text-gray-700">Date</label>
               <input
                 type="date"
                 name="date"
@@ -63,9 +148,9 @@
               />
             </div>
           </div>
-          <div class="w-full sm:w-half formbold-px-3">
-            <div class="formbold-mb-5">
-              <label for="time" class="formbold-form-label"> Time </label>
+          <div class="w-full sm:w-1/2 px-3">
+            <div class="mb-5">
+              <label for="time" class="block font-medium text-gray-700">Time</label>
               <input
                 type="time"
                 name="time"
@@ -75,13 +160,11 @@
             </div>
           </div>
         </div>
-        <div class="formbold-mb-5 formbold-pt-3">
-          <label class="formbold-form-label formbold-form-label-2">
-            Address Details
-          </label>
-          <div class="flex flex-wrap formbold--mx-3">
-            <div class="w-full sm:w-half formbold-px-3">
-              <div class="formbold-mb-5">
+        <div class="mb-5 pt-3">
+          <label class="block font-medium text-gray-700">Address Details</label>
+          <div class="flex flex-wrap">
+            <div class="w-full sm:w-1/2 px-3">
+              <div class="mb-5">
                 <input
                   type="text"
                   name="area"
@@ -91,8 +174,8 @@
                 />
               </div>
             </div>
-            <div class="w-full sm:w-half formbold-px-3">
-              <div class="formbold-mb-5">
+            <div class="w-full sm:w-1/2 px-3">
+              <div class="mb-5">
                 <input
                   type="text"
                   name="city"
@@ -102,8 +185,8 @@
                 />
               </div>
             </div>
-            <div class="w-full sm:w-half formbold-px-3">
-              <div class="formbold-mb-5">
+            <div class="w-full sm:w-1/2 px-3">
+              <div class="mb-5">
                 <input
                   type="text"
                   name="state"
@@ -113,8 +196,8 @@
                 />
               </div>
             </div>
-            <div class="w-full sm:w-half formbold-px-3">
-              <div class="formbold-mb-5">
+            <div class="w-full sm:w-1/2 px-3">
+              <div class="mb-5">
                 <input
                   type="text"
                   name="post-code"
@@ -127,50 +210,70 @@
           </div>
         </div>
         <div>
-          <button class="formbold-btn">Book Appointment</button>
+          <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg w-full">Book Appointment</button>
         </div>
       </form>
     </div>
   </div>
-  
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var form = document.getElementById('appointmentForm');
 
-      form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        if (validateForm()) {
-          form.submit();
-        }
-      });
+   <!-- footer section -->
 
-      function validateForm() {
-        var name = document.getElementById('name').value;
-        var phone = document.getElementById('phone').value;
-        var age = document.getElementById('age').value;
-        var email = document.getElementById('email').value;
+   <footer
+   class=" pl-30 pr-30 pt-10 pb-10 lg:pl-36 footer bg-[#001529] text-base-content lg:flex lg:justify-between mt-10">
+   <aside class="w-full">
+       <h2 class="lg:text-3xl text-xl text-center w-full lg:text-left text-[#FFF] font-extrabold">
+           Get In Touch
+       </h2>
+       <p class=" p-4 text-center w-full lg:text-left text-[#ffffff99] font-medium text-base mt-4">
+           To connect with us, you can follow our facebook page, subscribe our youtube channel, follow us in insta
+           and twitter.
+           also ypu can share your experience in our email section.
+       </p>
+       <p class=" text-center w-full lg:text-left font-medium text-[#FFF] mt-6">
+           <i class="fa-regular fa-envelope text-[#FF4240]"></i>
+           ashikpullock99@gmail.com
+       </p>
+       <p class=" text-center w-full lg:text-left font-medium text-[#FFF] mt-3">
+           <i class="fa-solid fa-phone text-[#FF4240]"></i>
+           (+88) 01624-334044
+       </p>
+   </aside>
+   <div
+       class="w-full flex justify-evenly lg:justify-between  items-center md:justify-between flex-row xl:justify-between 2xl:justify-between">
+       <nav class=" flex flex-col justify-between items-center">
+           <header class=" text-[#FFF] font-bold text-xl mb-7">Company</header>
+           <a class="link link-hover font-medium text-[#ffffff99]">About us</a>
+           <a class="link link-hover font-medium text-[#ffffff99]">Leadership</a>
+           <a class="link link-hover font-medium text-[#ffffff99]">Careers</a>
+           <a class="link link-hover font-medium text-[#ffffff99]">News & Article</a>
+           <a class="link link-hover font-medium text-[#ffffff99]">Legal Notice</a>
+       </nav>
+       <nav class=" flex flex-col justify-between items-center">
+           <header class=" text-[#FFF] font-bold text-xl mb-8">Support</header>
+           <a class="link link-hover font-medium text-[#ffffff99] mb-1 ">Help Center</a>
+           <a class="link link-hover font-medium text-[#ffffff99] mb-1">FAQ</a>
+           <a class="link link-hover font-medium text-[#ffffff99] mb-1">Ticket Support</a>
+           <a class="link link-hover font-medium text-[#ffffff99] mb-1">Contact Us</a>
+       </nav>
+   </div>
+   <nav class="w-full">
+       <header class=" text-center w-full    text-[#FFF] lg:text-center font-bold text-xl mb-7">Services</header>
+       <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Academy</a>
+       <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Group Lesson</a>
+       <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Private Lesson</a>
+       <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Hockeys for
+           kids</a>
+       <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Hockeys for
+           Adult</a>
+   </nav>
+</footer>
 
-        if (name.trim() === '') {
-          alert('Please enter your full name');
-          return false;
-        }
-        if (phone.trim() === '') {
-          alert('Please enter your phone number');
-          return false;
-        }
-        if (age.trim() === '') {
-          alert('Please enter your age');
-          return false;
-        }
-        if (email.trim() === '') {
-          alert('Please enter your email');
-          return false;
-        }
+<!-- js file -->
 
-        return true;
-      }
-    });
-  </script>
+<script src="tailwind.config.js"></script>
+<script src="home.js"></script>
+</body>
+
+</html>
 </body>
 </html>
-<script src="tailwind.config.js"></script>
