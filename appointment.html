@@ -63,6 +63,10 @@
               <li><a href="appointment.html"
                   class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">Appointment</a>
               </li>
+              <li><a href="register.html"
+                  class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">Doctor
+                  Register</a>
+              </li>
             </ul>
           </div>
           <a class="btn bg-white border-0 hover:bg-white text-xl font-bold lg:font-extrabold lg:text-3xl"><img
@@ -79,6 +83,10 @@
             </li>
             <li><a href="appointment.html"
                 class="text-lg font-semibold hover:text-white hover:bg-green-500">Appointment</a></li>
+            <li><a href="register.html"
+                class="text-lg font-semibold hover:text-white hover:bg-green-500">Doctor
+                Register</a>
+            </li>
           </ul>
         </div>
         <div class="navbar-end">
@@ -90,43 +98,48 @@
     </section>
   </header>
 
-<<<<<<< HEAD
-  <div class="flex justify-center items-center p-12">
-    <div class="w-full max-w-lg bg-white p-8 rounded-lg">
-      <form action="https://formbold.com/s/FORM_ID" method="POST" id="appointmentForm">
+  <main>
 
-        <div class="flex flex-wrap mb-5 gap-4">
+    <section>
 
-          <div class="mb-5">
-            <!-- <label for="name" class="block font-medium text-gray-700">Full Name</label> -->
-            <input type="text" name="name" id="name" placeholder="Full Name"
-              class="formbold-form-input border-2 p-2 rounded-xl" />
-          </div>
+      <div class="flex justify-center items-center p-12">
+        <div class="w-full max-w-lg bg-white p-8 rounded-lg">
 
-          <div class="w-full sm:w-1/2 px-3">
-            <div class="mb-5">
-              <label for="date" class="block font-medium text-gray-700">Select Date</label>
-              <input type="date" name="date" id="date" class="formbold-form-input" />
+          <form action="https://formbold.com/s/FORM_ID" method="POST" id="appointmentForm">
+
+            <div class="flex flex-wrap mb-5 gap-4">
+
+              <div class="mb-5">
+                <!-- <label for="name" class="block font-medium text-gray-700">Full Name</label> -->
+                <input type="text" name="name" id="name" placeholder="Full Name"
+                  class="formbold-form-input border-2 p-2 rounded-xl" />
+              </div>
+
+              <div class="w-full sm:w-1/2 px-3">
+                <div class="mb-5">
+                  <label for="date" class="block font-medium text-gray-700">Select Date</label>
+                  <input type="date" name="date" id="date" class="formbold-form-input" />
+                </div>
+              </div>
+
             </div>
-          </div>
 
-        </div>
+            <div class="flex flex-wrap mb-5 gap-4">
 
-        <div class="flex flex-wrap mb-5 gap-4">
+              <div class="mb-5">
+                <!-- <label for="phone" class="block font-medium text-gray-700">Phone Number</label> -->
+                <input type="text" name="phone" id="phone" placeholder="Enter your phone number"
+                  class="formbold-form-input border-2 p-2 rounded-xl" />
+              </div>
+              <div class="mb-5">
+                <!-- <label for="age" class="block font-medium text-gray-700">Age</label> -->
+                <input type="text" name="age" id="age" placeholder="Enter Your Age "
+                  class="formbold-form-input border-2 p-2 rounded-xl" />
+              </div>
 
-          <div class="mb-5">
-            <!-- <label for="phone" class="block font-medium text-gray-700">Phone Number</label> -->
-            <input type="text" name="phone" id="phone" placeholder="Enter your phone number"
-              class="formbold-form-input border-2 p-2 rounded-xl" />
-          </div>
-          <div class="mb-5">
-            <!-- <label for="age" class="block font-medium text-gray-700">Age</label> -->
-            <input type="text" name="age" id="age" placeholder="Enter Your Age " class="formbold-form-input border-2 p-2 rounded-xl" />
-          </div>
+            </div>
 
-        </div>
-
-        <!-- <div class="mb-5">
+            <!-- <div class="mb-5">
           <label for="email" class="block font-medium text-gray-700">Email Address</label>
           <input
             type="email"
@@ -136,7 +149,7 @@
             class="formbold-form-input"
           />
         </div> -->
-        <!-- <div class="flex flex-wrap mb-5">
+            <!-- <div class="flex flex-wrap mb-5">
           <div class="w-full sm:w-1/2 px-3">
             <div class="mb-5">
               <label for="date" class="block font-medium text-gray-700">Select Docto</label>
@@ -150,7 +163,7 @@
             </div>
           </div>
         </div> -->
-        <!-- <div class="mb-5 pt-3">
+            <!-- <div class="mb-5 pt-3">
           <label class="block font-medium text-gray-700">Address Details</label>
           <div class="flex flex-wrap">
             <div class="w-full sm:w-1/2 px-3">
@@ -199,81 +212,22 @@
             </div>
           </div>
         </div> -->
-        <div>
-          <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg w-full">Book
-            Appointment</button>
+            <div>
+              <button
+                class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg w-full">Book
+                Appointment</button>
+            </div>
+
+          </form>
         </div>
-      </form>
-=======
-    <div class="flex justify-center items-center p-12">
-        <div class="w-full max-w-lg bg-white p-8 rounded-lg">
-            <form action="https://formbold.com/s/FORM_ID" method="POST" id="appointmentForm">
-                <div class="mb-5">
-                    <label for="name" class="block font-medium text-gray-700">Full Name</label>
-                    <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Full Name"
-                        class="formbold-form-input"
-                    />
-                    <input
-                        type="number"
-                        name="phone"
-                        id="phone"
-                        placeholder="Phone Number"
-                        class="formbold-form-input"
-                    />
-                </div>
-                <div class="mb-5">
-                    <label for="doctor" class="block font-medium text-gray-700">Select Doctor</label>
-                    <select name="doctor" id="doctor" class="formbold-form-input">
-                        <option value="dr1">Dr. John Doe - Cardiologist</option>
-                        <option value="dr2">Dr. Jane Smith - Neurologist</option>
-                        <option value="dr3">Dr. Michael Johnson - Pediatrician</option>
-                        <option value="dr4">Dr. Sarah Williams - Oncologist</option>
-                        <option value="dr5">Dr. David Brown - Orthopedic Surgeon</option>
-                        <option value="dr6">Dr. Emily Wilson - Dermatologist</option>
-                        <option value="dr7">Dr. James Lee - Ophthalmologist</option>
-                        <option value="dr8">Dr. Olivia Taylor - Psychiatrist</option>
-                        <option value="dr9">Dr. Benjamin Martinez - Gynecologist</option>
-                        <option value="dr10">Dr. Sophia Garcia - Urologist</option>
-                        <option value="dr11">Dr. Ethan Rodriguez - Endocrinologist</option>
-                        <option value="dr12">Dr. Ava Anderson - Pulmonologist</option>
-                    </select>
-                </div>
-                
-                <div class="flex flex-wrap mb-5">
-                    <div class="w-full sm:w-1/2 px-3">
-                        <div class="mb-5">
-                            <label for="date" class="block font-medium text-gray-700">Date</label>
-                            <input
-                                type="date"
-                                name="date"
-                                id="date"
-                                class="formbold-form-input"
-                            />
-                        </div>
-                    </div>
-                    <div class="w-full sm:w-1/2 px-3">
-                        <div class="mb-5">
-                            <label for="time" class="block font-medium text-gray-700">Time</label>
-                            <input
-                                type="time"
-                                name="time"
-                                id="time"
-                                class="formbold-form-input"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg w-full">Book Appointment</button>
-                </div>
-            </form>
-        </div>
->>>>>>> ee01ee04984049659f14f8472f43e36b023c973a
-    </div>
+      </div>
+    </section>
+
+  </main>
+
+
+
+
 
   <!-- footer section -->
 
@@ -334,9 +288,3 @@
 </body>
 
 </html>
-<<<<<<< HEAD
-</body>
-
-</html>
-=======
->>>>>>> ee01ee04984049659f14f8472f43e36b023c973a
